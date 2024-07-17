@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <form action="" onsubmit="final(event)">
+          <h2>Sign Up</h2>
+          <br />
+          <input id="uName" type="text" placeholder="Enter username" /><br />
+          <input
+            type="password"
+            placeholder="Enter password"
+            id="pass"
+            onkeyup="passcheck(this.value)"
+            autocomplete="off"
+          /><br />
+          <input
+            class=""
+            type="password"
+            id="cnfPass"
+            placeholder="Enter confirm password"
+            onkeyup="check(this.value)"
+          />
+          <div class="error">
+            <label class="pass-match-error"></label> <br />
+            <label class="pass-check">8 characters</label> <br />
+            <label class="pass-check">1 lower case character</label> <br />
+            <label class="pass-check">1 upper case character</label> <br />
+            <label class="pass-check">1 numerical character</label> <br />
+            <label class="pass-check">1 special character</label>
+          </div>
+          <div class="aditional">
+            <div class="remember">
+              <input type="checkbox" name="remember_me" checked />
+              <label>Remember me</label>
+            </div>
+            <div class="forget">
+              <p class="forgetbtn hidden">Forget Password</p>
+            </div>
+          </div>
+          <button>Submit</button>
+        </form>
+        <button id="logbtn">Are you already an user? Login</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

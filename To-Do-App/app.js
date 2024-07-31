@@ -13,7 +13,6 @@ function addTask() {
         <span class="material-symbols-outlined" onclick="deleteTask(this)">delete</span>
     `;
   taskList.appendChild(li);
-  count++
 
   taskInput.value = "";
 }

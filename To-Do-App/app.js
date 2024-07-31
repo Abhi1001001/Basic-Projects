@@ -1,7 +1,7 @@
 // script.js
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
-let count = 1;
+let date = new Date();
 
 function addTask() {
   const taskText = taskInput.value.trim();
@@ -9,7 +9,7 @@ function addTask() {
 
   const li = document.createElement("li");
   li.innerHTML = `
-        <span><h4>Day${count}</h4> ${taskText}</span>
+        <span><h4>Date : ${date.getDay()}/${date.getMonth()}/${date.getFullYear()}</h4> ${taskText}</span>
         <span class="material-symbols-outlined" onclick="deleteTask(this)">delete</span>
     `;
   taskList.appendChild(li);

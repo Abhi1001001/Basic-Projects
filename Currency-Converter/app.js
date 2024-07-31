@@ -1,4 +1,4 @@
-
+ 
 let CurrURL = "https://www.amdoren.com/api/currency.php?api_key=52r79aTLiGm9hk8FYszcz7HgKNWYE4&from=";
 
 const dropDown = document.querySelectorAll("select");

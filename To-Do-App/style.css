@@ -54,11 +54,7 @@ li {
     border-bottom: 1px solid #ddd;
 }
 
-.delete-btn {
-    color: #ff0000;
-    cursor: pointer;
-}
-
 .material-symbols-outlined{
     cursor: pointer;
+    color: rgb(192, 40, 40);
 }

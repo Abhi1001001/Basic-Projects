@@ -9,7 +9,7 @@ function addTask() {
 
   const li = document.createElement("li");
   li.innerHTML = `
-        <span><h4>Date : ${date.getDay()}/${date.getMonth()}/${date.getFullYear()}</h4> ${taskText}</span>
+        <span><h4>Date : ${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}</h4> ${taskText}</span>
         <span class="material-symbols-outlined" onclick="deleteTask(this)">delete</span>
     `;
   taskList.appendChild(li);

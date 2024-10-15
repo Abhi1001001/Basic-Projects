@@ -1,51 +1,71 @@
-let passError = document.getElementsByClassName("pass-check");
-let getPass = document.getElementById("pass");
+let passError = document.getElementsByClassName("pass-error")[0];
+let cnfPassError = document.getElementsByClassName("cnfPass-error")[0];
+let getPass = document.getElementById("password");
 let passMatchError = document.getElementsByClassName("pass-match-error")[0];
-let loginbtn = document.getElementById("logbtn");
+let loginbtn = document.getElementsByClassName("logbtn")[0];
 let forgetbtn = document.getElementsByClassName("forgetbtn")[0];
-let cnfPassInput = document.getElementById("cnfPass");
+let cnfPassInput = document.getElementsByClassName("cnfPass")[0];
 let legend = document.getElementsByTagName("h2")[0];
 let inputs = document.getElementsByTagName("input");
 
-function passcheck(data) {
-  const lowerCase = new RegExp("(?=.*[a-z])");
-  const upperCase = new RegExp("(?=.*[A-Z])");
-  const numeric = new RegExp("(?=.*[0-9])");
-  const special = new RegExp("(?=.*[!@#$%^&*])");
-  const eightcr = new RegExp("(?=.{8,})");
+const lowerCase = new RegExp("(?=.*[a-z])");
+const upperCase = new RegExp("(?=.*[A-Z])");
+const numeric = new RegExp("(?=.*[0-9])");
+const special = new RegExp("(?=.*[!@#$%^&*])");
+const eightcr = new RegExp("(?=.{8,})");
 
-  if (eightcr.test(data)) {
-    passError[0].style.color = "green";
-  }
-  if (lowerCase.test(data)) {
-    passError[1].style.color = "green";
-  }
-  if (upperCase.test(data)) {
-    passError[2].style.color = "green";
-  }
-  if (numeric.test(data)) {
-    passError[3].style.color = "green";
-  }
-  if (special.test(data)) {
-    passError[4].style.color = "green";
+function passCheck(event) {
+  let data = event.target.value;
+  if (
+    eightcr.test(data) &&
+    lowerCase.test(data) &&
+    upperCase.test(data) &&
+    numeric.test(data) &&
+    special.test(data)
+  ) {
+    passError.classList.remove("show");
+    passError.classList.add("hide");
+  } else {
+    passError.classList.remove("hide");
+    passError.classList.add("show");
   }
 }
-const check = (data) => {
-  if (getPass.value != data) {
-    passMatchError.innerText = "Password not match";
+const cnfPassCheck = (event) => {
+  if (getPass.value != event.target.value) {
+    cnfPassError.innerText = "Password not match";
   } else {
-    passMatchError.innerText = "";
+    cnfPassError.innerText = "";
   }
 };
 const final = (event) => {
   event.preventDefault();
-  alert(`
-    Username = ${inputs[0].value}
-    Password = ${inputs[1].value}
-    `);
-  inputs[0].value = "";
-  inputs[1].value = "";
-  inputs[2].value = "";
+
+  if (loginbtn.innerText == "Are you already an user? Login") {
+    if (
+      getPass.value === cnfPassInput.value &&
+      eightcr.test(getPass.value) &&
+      lowerCase.test(getPass.value) &&
+      upperCase.test(getPass.value) &&
+      numeric.test(getPass.value) &&
+      special.test(getPass.value)
+    ) {
+      alert(`Username : ${inputs[0].value} \nPassword : ${inputs[1].value}`);
+    } else {
+      alert("Error : Please enter all valid details");
+    }
+  } else {
+    if (
+      eightcr.test(getPass.value) &&
+      lowerCase.test(getPass.value) &&
+      upperCase.test(getPass.value) &&
+      numeric.test(getPass.value) &&
+      special.test(getPass.value)
+    ) {
+      alert(`Username : ${inputs[0].value} \nPassword : ${inputs[1].value}`);
+    } else {
+      alert("Error : Please enter all valid details");
+    }
+  }
 };
 
 loginbtn.addEventListener("click", loginUser);
@@ -59,7 +79,7 @@ function loginUser() {
   } else {
     loginbtn.innerText = "Are you already an user? Login";
     cnfPassInput.classList.remove("hide");
-    forgetbtn.classList.add("hidden");
+    forgetbtn.classList.add("hide");
     legend.innerText = "Sign-Up";
   }
 }

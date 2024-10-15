@@ -11,42 +11,35 @@
       <div class="container">
         <form action="" onsubmit="final(event)">
           <h2>Sign Up</h2>
-          <br />
-          <input id="uName" type="text" placeholder="Enter username" /><br />
+          <input type="text" placeholder="Enter username" />
           <input
             type="password"
+            id="password"
             placeholder="Enter password"
-            id="pass"
-            onkeyup="passcheck(this.value)"
+            onkeyup="passCheck(event)"
             autocomplete="off"
-          /><br />
-          <input
-            class=""
-            type="password"
-            id="cnfPass"
-            placeholder="Enter confirm password"
-            onkeyup="check(this.value)"
           />
-          <div class="error">
-            <label class="pass-match-error"></label> <br />
-            <label class="pass-check">8 characters</label> <br />
-            <label class="pass-check">1 lower case character</label> <br />
-            <label class="pass-check">1 upper case character</label> <br />
-            <label class="pass-check">1 numerical character</label> <br />
-            <label class="pass-check">1 special character</label>
-          </div>
+          <p class="pass-error">Please enter a valid and stronger password</p>
+          <input
+          class="cnfPass"
+            type="password"
+            placeholder="Enter confirm password"
+            onkeyup="cnfPassCheck(event)"
+          />
+          <p class="cnfPass-error"></p>
           <div class="aditional">
             <div class="remember">
               <input type="checkbox" name="remember_me" checked />
               <label>Remember me</label>
             </div>
             <div class="forget">
-              <p class="forgetbtn hidden">Forget Password</p>
+              <p class="forgetbtn hide">Forget Password</p>
             </div>
           </div>
-          <button>Submit</button>
+          <button type="submit">Submit</button>
+          <button class="logbtn" type="button">Are you already an user? Login</button>
         </form>
-        <button id="logbtn">Are you already an user? Login</button>
+        
       </div>
     </div>
     <script src="./app.js"></script>

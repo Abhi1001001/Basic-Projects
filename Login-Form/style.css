@@ -12,8 +12,7 @@
   background-size: cover;
 }
 .container {
-  height: 500px;
-  width: 550px;
+  width: 40vw;
   border: solid 2px white;
   backdrop-filter: blur(10px);
   display: grid;
@@ -21,11 +20,19 @@
   color: black;
   font-size: 20px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
-#uName,
-#pass,
-#cnfPass {
-  width: 25vw;
+form{
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  width: 100%;
   padding: 5px;
   border: none;
   border-bottom: 3px solid white;
@@ -33,6 +40,7 @@
   margin: 5px 0px 5px 0px;
   font-size: 20px;
   background: none;
+  outline: none;
 }
 form button {
   font-size: 19px;
@@ -52,8 +60,8 @@ form button {
 h2 {
   text-align: center;
 }
-#logbtn {
-  margin-top: -3rem;
+.logbtn {
+  margin: 1rem 0;
   background: none;
   color: blue;
   border: none;
@@ -62,9 +70,6 @@ h2 {
 }
 .hide {
   display: none;
-}
-.hidden {
-  visibility: hidden;
 }
 label {
   font-size: 19px;
@@ -89,4 +94,16 @@ input::placeholder {
 }
 .forgetbtn {
   cursor: pointer;
+}
+.pass-error {
+  font-size: 6px;
+  color: #ff3636e6;
+  display: none;
+}
+.cnfPass-error{
+  font-size: 5px;
+  color: #ff3636e6;
+}
+.show{
+  display: block;
 }

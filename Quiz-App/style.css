@@ -1,0 +1,98 @@
+body{
+    background: url("./icons/background.jpeg");
+    background-size: cover;
+    overflow: hidden;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.container{
+    height: 75vh;
+    width: 60vw;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    
+}
+.question{
+    width: 40vw;
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 2rem 0 2rem;
+    align-items: center;
+    z-index: 1;
+}
+.question-page{
+    z-index: 1;
+}
+.options{
+    font-size: 28px;
+    z-index: 1;
+}
+.options ol li {
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #a8a8a8;
+    border-radius: 1rem;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.btn-next{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 25px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+
+}
+p{
+    font-size: 15px;
+}
+.blackboard{
+    position: absolute;
+    height: 75vh;
+    width: 60vw;
+}
+
+.hide{
+    display: none;
+}
+/* home page styling */
+.home{
+    z-index: 1;
+    text-align: center;
+}
+.welcome-text{
+    font-size: 4rem;
+}
+.home-btn{
+    background-color: inherit;
+    border: 2px solid #d3d3d3;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+}
+.home-btn:hover{
+    color: #dbdbdb;
+    border: 2px solid #dbdbdb;
+    scale: 1.1;
+    transition: 0.3s ;
+    
+}

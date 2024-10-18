@@ -133,6 +133,9 @@ p{
 }
 
 @media (max-width: 500px) {
+    .container{
+        width: 95vw;
+    }
     .question{
         font-size: 1rem;
     }
@@ -154,8 +157,8 @@ p{
         font-size: 0.7rem;
     }
     .blackboard{
-        width: 80vw;
         height: 70vh;
-        left: -10%;
+        width: 100%;
+        /* left: -10%; */
     }
 }

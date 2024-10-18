@@ -12,378 +12,55 @@
         <img class="blackboard" src="./icons/blackboard.png" alt="loading...">
         <!-- Home-Page -->
          <section class="home">
-          <p class="welcome-text">Welcome to Quiz App</p class="welcome-text">
-            <button class="home-btn" onclick="goToQuestion1()">Click to start Quiz</button>
+          <p class="welcome-text">Welcome to Quiz App</p>
+            <button class="home-btn" onclick="startQuestion()">Click to start Quiz</button>
          </section>
-        <!-- Question-1 -->
+
+        <!-- Question -->
         <section class="question-page hide">
           <div class="question">
             1.What is the correct way to declare a variable in JavaScript?
           </div>
-          <div class="options">
-            <ol>
-              <li onclick="checkA()">
-                x = 10
+            <ul type="none" class="options">
+              <div onclick="checkA()">
+                <li >
+                  x = 10
+                </li>
                 <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkB()">
-                var x = 10
+                  <img class="hide" src="./icons/icon-close.svg" alt="loading...">
+              </div>
+              <div  onclick="checkB()">
+                <li>
+                  var x = 10
+                  
+                </li>
                 <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-check.svg" alt="loading...">
-              </li>
-              <li onclick="checkC()">
-                x = 10
+                  <img class="hide" src="./icons/icon-check.svg" alt="loading...">
+              </div>
+              <div  onclick="checkC()">
+                <li>
+                  x = 10
+                  <p class="hide">your choice</p>
+                  <img class="hide" src="./icons/icon-close.svg" alt="loading...">
+                </li>
                 <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkD()">
-                int x = 10
+                  <img class="hide" src="./icons/icon-close.svg" alt="loading...">
+              </div>
+              <div onclick="checkD()">
+                <li >
+                  int x = 10
+                  
+                </li>
                 <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-            </ol>
-          </div>
+                  <img class="hide" src="./icons/icon-close.svg" alt="loading...">
+              </div>
+            </ul type="none">
           <div class="btn">
-            <button class="btn-next" onclick="goBackHome()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
-
-            <button class="btn-next" onclick="goToQuestion2()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
-            
+            <button class="btn-next" onclick="goToPreviousQuestion()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
+            <button class="btn-next" onclick="goToNextQuestion()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
           </div>
         </section>
-
-         <!-- Question-2 -->
-         <section class="question-page hide">
-          <div class="question">
-            2.What does the typeof operator return when applied to an array?
-          </div>
-          <div class="options">
-            <ol>
-              <li onclick="checkA()">
-                "array"
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkB()">
-                "object"
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-check.svg" alt="loading...">
-              </li>
-              <li onclick="checkC()">
-                "list"
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkD()">
-                "collection"
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-            </ol>
-          </div>
-          <div class="btn">
-            <button class="btn-next" onclick="goBackQuestion1()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
-
-            <button class="btn-next" onclick="goToQuestion3()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
-            
-          </div>
-        </section>
-
-        <!-- Question-3 -->
-        <section class="question-page hide">
-          <div class="question">
-            3.Which method can be used to combine two or more arrays?
-          </div>
-          <div class="options">
-            <ol>
-              <li onclick="checkA()">
-                concat()
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkB()">
-                join()
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkC()">
-                merge()
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkD()">
-                append()
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-check.svg" alt="loading...">
-              </li>
-            </ol>
-          </div>
-          <div class="btn">
-            <button class="btn-next" onclick="goBackQuestion2()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
-
-            <button class="btn-next" onclick="goToQuestion4()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
-            
-          </div>
-        </section>
-
-        <!-- Question-4 -->
-        <section class="question-page hide">
-          <div class="question">
-            4.Which of the following is a feature of ES6 (ECMAScript 2015)?
-          </div>
-          <div class="options">
-            <ol>
-              <li onclick="checkA()">
-                var keyword
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkB()">
-                Arrow functions
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-check.svg" alt="loading...">
-              </li>
-              <li onclick="checkC()">
-                for loop
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkD()">
-                function keyword
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-            </ol>
-          </div>
-          <div class="btn">
-            <button class="btn-next" onclick="goBackQuestion3()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
-
-            <button class="btn-next" onclick="goToQuestion5()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
-            
-          </div>
-        </section>
-
-        <!-- Question-5 -->
-        <section class="question-page hide">
-          <div class="question">
-            5.Which keyword is used to declare a block-scoped variable in JavaScript?
-          </div>
-          <div class="options">
-            <ol>
-              <li onclick="checkA()">
-                var
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkB()">
-                let
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-check.svg" alt="loading...">
-              </li>
-              <li onclick="checkC()">
-                static
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkD()">
-                block
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-            </ol>
-          </div>
-          <div class="btn">
-            <button class="btn-next" onclick="goBackQuestion4()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
-
-            <button class="btn-next" onclick="goToQuestion6()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
-            
-          </div>
-        </section>
-        
-        <!-- Question-6 -->
-        <section class="question-page hide">
-          <div class="question">
-            6.What will happen if you try to reassign a const variable?
-          </div>
-          <div class="options">
-            <ol>
-              <li onclick="checkA()">
-                It will be updated successfully
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkB()">
-                It will throw a TypeError
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-check.svg" alt="loading...">
-              </li>
-              <li onclick="checkC()">
-                It will be ignored
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkD()">
-                It will be converted to let
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-            </ol>
-          </div>
-          <div class="btn">
-            <button class="btn-next" onclick="goBackQuestion5()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
-
-            <button class="btn-next" onclick="goToQuestion7()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
-            
-          </div>
-        </section>
-
-        <!-- Question-7 -->
-        <section class="question-page hide">
-          <div class="question">
-            7.What does the setTimeout() function do?
-          </div>
-          <div class="options">
-            <ol>
-              <li onclick="checkA()">
-                Executes a function after a specified delay
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkB()">
-                Repeats a function at specified intervals
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-check.svg" alt="loading...">
-              </li>
-              <li onclick="checkC()">
-                Pauses execution of a function
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkD()">
-                Cancels a function execution
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-            </ol>
-          </div>
-          <div class="btn">
-            <button class="btn-next" onclick="goBackQuestion6()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
-
-            <button class="btn-next" onclick="goToQuestion8()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
-            
-          </div>
-        </section>
-
-        <!-- Question-8 -->
-        <section class="question-page hide">
-          <div class="question">
-            8.What is the scope of a variable declared with let?
-          </div>
-          <div class="options">
-            <ol>
-              <li onclick="checkA()">
-                Global scope
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkB()">
-                Function scope
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-check.svg" alt="loading...">
-              </li>
-              <li onclick="checkC()">
-                None of the above
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkD()">
-                Block scope
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-            </ol>
-          </div>
-          <div class="btn">
-            <button class="btn-next" onclick="goBackQuestion7()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
-
-            <button class="btn-next" onclick="goToQuestion9()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
-            
-          </div>
-        </section>
-
-        <!-- Question-9 -->
-        <section class="question-page hide">
-          <div class="question">
-            9.What does the this keyword refer to in a regular function?
-          </div>
-          <div class="options">
-            <ol>
-              <li onclick="checkA()">
-                The global object
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkB()">
-                The function itself
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-check.svg" alt="loading...">
-              </li>
-              <li onclick="checkC()">
-                The object that the function is a method of
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkD()">
-                None of the above
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-            </ol>
-          </div>
-          <div class="btn">
-            <button class="btn-next" onclick="goBackQuestion8()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
-
-            <button class="btn-next" onclick="goToQuestion10()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
-            
-          </div>
-        </section>
-
-        <!-- Question-10 -->
-        <section class="question-page hide">
-          <div class="question">
-            10.Which method would you use to add a new element at the start of an array?
-          </div>
-          <div class="options">
-            <ol>
-              <li onclick="checkA()">
-                push()
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkB()">
-                unshift()
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-check.svg" alt="loading...">
-              </li>
-              <li onclick="checkC()">
-                shift()
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-              <li onclick="checkD()">
-                splice()
-                <p class="hide">your choice</p>
-                <img class="hide" src="./icons/icon-close.svg" alt="loading...">
-              </li>
-            </ol>
-          </div>
-          <div class="btn">
-            <button class="btn-next" onclick="goBackQuestion9()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
-
-            <button class="btn-next">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
-            
-          </div>
-        </section>
+          
       </div>
     </div>
     <script src="app.js"></script>

@@ -5,6 +5,8 @@ let optionDiv = document.querySelectorAll(".options div");
 let home = document.querySelector(".home");
 let questionPage = document.querySelector(".question-page");
 let question = document.querySelector(".question");
+let timer = document.querySelector(".timer");
+let timerCount = document.querySelector(".timer span");
 let questionCount = 0;
 
 
@@ -149,6 +151,7 @@ const checkB = () => {
 const startQuestion = ()=>{
   home.classList.add("hide");
   questionPage.classList.remove("hide");
+  timer.classList.remove("hide");
   question.innerText = `${questions[questionCount].id}. ${questions[questionCount].question}`;
     option[0].innerText = questions[questionCount].a;
     option[1].innerText = questions[questionCount].b;
@@ -173,4 +176,24 @@ const goToPreviousQuestion = () =>{
   option[2].innerText = questions[questionCount].c;
   option[3].innerText = questions[questionCount].d; 
 }
+
+
+// Timer ---------------->
+// let now = new Date();
+// console.log(now.getSeconds());
+let sec= 59;
+let min = 9;
+let interval = setInterval(time,1000)
+function time (){
+  timerCount.innerText = `${min} : ${sec}`;
+  sec--
+  if(min>0){
+    if(sec<=0){
+      min--;
+      sec = 59;
+    }
+  } 
+}
+
+
 

@@ -15,21 +15,29 @@ body{
     width: 70vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
 }
+/* question page styling */
 .question{
-    width: 40vw;
+    width: 100%;
     font-size: 2rem;
     text-align: left;
-    /* padding-left: 2rem; */
     align-items: center;
     z-index: 1;
 }
 .question-page{
     z-index: 1;
     width: 75%;
+}
+.timer{
+    width: 75%;
+    z-index: 1;
+    text-align: right;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
 }
 .options{
     font-size: 28px;
@@ -130,6 +138,9 @@ p{
     .blackboard{
         width: 75vw;
     }
+    .timer{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -159,6 +170,8 @@ p{
     .blackboard{
         height: 70vh;
         width: 100%;
-        /* left: -10%; */
+    }
+    .timer{
+        font-size: 1rem;
     }
 }

@@ -125,6 +125,21 @@ const showScore = () => {
   }
 };
 
+// disable button ------------->
+const disableBtn = () =>{
+  for(let index = 0; index < 4; index++){
+  optionBtn[index].setAttribute('disabled','true');
+  }
+} 
+
+// enable button ------------->
+const enableBtn = () =>{
+  for(let index = 0; index < 4; index++){
+  optionBtn[index].removeAttribute('disabled');
+  }
+} 
+
+
 
 // answer checking function for each option --------->
 const checkA = () => {
@@ -143,6 +158,7 @@ const checkA = () => {
       }
     }
   }
+  disableBtn();
 };
 const checkB = () => {
   choice[1].classList.remove("hide");
@@ -160,6 +176,7 @@ const checkB = () => {
       }
     }
   }
+  disableBtn();
 };
 const checkC = () => {
   choice[2].classList.remove("hide");
@@ -177,6 +194,7 @@ const checkC = () => {
       }
     }
   }
+  disableBtn();
 };
 const checkD = () => {
   choice[3].classList.remove("hide");
@@ -194,6 +212,7 @@ const checkD = () => {
       }
     }
   }
+  disableBtn();
 };
 
 // Reset answer function ------------->
@@ -215,6 +234,7 @@ const startQuestion = () => {
   sec = 59;
   min = 4;
   resetAnswer();
+  enableBtn();
   question.innerText = `${questions[questionCount].id}. ${questions[questionCount].question}`;
   option[0].innerText = questions[questionCount].a;
   option[1].innerText = questions[questionCount].b;
@@ -232,6 +252,7 @@ const goToNextQuestion = () => {
     option[2].innerText = questions[questionCount].c;
     option[3].innerText = questions[questionCount].d;
     resetAnswer();
+    enableBtn();
   } else {
     showScore();
   }

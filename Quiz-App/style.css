@@ -20,6 +20,7 @@ body{
     justify-content: center;
     position: relative;
 }
+
 /* question page styling */
 .question{
     width: 100%;
@@ -32,15 +33,7 @@ body{
     z-index: 1;
     width: 75%;
 }
-.timer{
-    width: 75%;
-    z-index: 1;
-    text-align: right;
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
-}
 .options{
-    font-size: 28px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -48,15 +41,18 @@ body{
     align-items: center;
     padding: 0;
 }
-.options div {
+.options button {
     height: 5vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 2px solid #a8a8a8;
+    color: #ffffff;
     border-radius: 1rem;
-    padding: 10px;
+    background-color: transparent;
+    padding: 2rem;
+    font-size: 25px;
     margin-bottom: 5px;
     cursor: pointer;
 }
@@ -85,9 +81,27 @@ p{
     width: 70vw;
 }
 
+/* timer section styling */
+.timer{
+    width: 75%;
+    z-index: 1;
+    text-align: right;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* score section styling */
+.score{
+    z-index: 1;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* display none class */
 .hide{
     display: none;
 }
+
 /* home page styling */
 .home{
     z-index: 1;
@@ -114,13 +128,14 @@ p{
     
 }
 
-/* media query */
+/* media querys */
 @media (max-width: 850px) {
     .question{
         font-size: 1.5rem;
     }
-    .options{
+    .options button{
         font-size: 1rem;
+        padding: 1.5rem;
     }
     .options div {
         height: 4vh;
@@ -141,6 +156,9 @@ p{
     .timer{
         font-size: 1rem;
     }
+    .score{
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -150,8 +168,9 @@ p{
     .question{
         font-size: 1rem;
     }
-    .options{
+    .options button{
         font-size: 0.7rem;
+        padding: 1rem;
     }
     .options div {
         height: 3vh;
@@ -173,5 +192,8 @@ p{
     }
     .timer{
         font-size: 1rem;
+    }
+    .score{
+        font-size: 0.8rem;
     }
 }

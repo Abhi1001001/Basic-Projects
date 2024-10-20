@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-image: url(./Images/background.jpg);
+  background-size: cover;
+}
+.container {
+  width: 40vw;
+  border: solid 2px white;
+  backdrop-filter: blur(10px);
+  display: grid;
+  place-items: center;
+  color: black;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+form{
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: 3px solid white;
+  border-radius: 10px;
+  margin: 5px 0px 5px 0px;
+  font-size: 20px;
+  background: none;
+  outline: none;
+}
+form button {
+  font-size: 19px;
+  padding: 5px;
+  margin: 10px 15px 0px 0px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+}
+.error {
+  height: auto;
+  font-size: 18px;
+  color: rgb(211, 0, 0);
+  padding-bottom: 10px;
+}
+h2 {
+  text-align: center;
+}
+.logbtn {
+  margin: 1rem 0;
+  background: none;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.hide {
+  display: none;
+}
+label {
+  font-size: 19px;
+}
+input::placeholder {
+  color: rgb(52, 48, 48);
+}
+.aditional {
+  display: flex;
+  justify-content: space-between;
+  color: blue;
+  font-size: 16px;
+}
+.aditional label {
+  font-size: 16px;
+  justify-content: center;
+}
+.aditional input {
+  justify-content: center;
+  height: 11px;
+  width: 11px;
+}
+.forgetbtn {
+  cursor: pointer;
+}
+.pass-error {
+  font-size: 6px;
+  color: #ff3636e6;
+  display: none;
+}
+.cnfPass-error{
+  font-size: 5px;
+  color: #ff3636e6;
+}
+.show{
+  display: block;
+}

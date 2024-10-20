@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1e1d1d;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0px;
+  color: #E8EAED;
+}
+.logo{
+  width: 100%;
+  max-width: 650px;
+}
+.search{
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+.search-menu {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  border: 2px solid #5f6368;
+  border-radius: 20px;
+  padding-left: 16px;
+  padding-right: 20px;
+  font-size: 1rem;
+  color: aliceblue;
+  margin-top: 2rem;
+  
+}
+.search-menu input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  padding: 0 1rem;
+  
+}
+.search-menu:hover, .search-menu:focus-within{
+    background-color: #303134;
+    border: solid 2px #303134;
+}
+.search-menu:focus-within{
+  border-radius: 20px 20px 0 0;
+}
+.close-icon{
+  display: none;
+}
+.search-menu:focus-within .close-icon{
+  display: block;
+}
+.border{
+  height: 2px;
+  width: 95%;
+  margin-inline: auto;
+  margin-top: -4px;
+  background-color: #5F6368;
+}
+.suggestion-bar{
+  position: absolute;
+  width: 100%;
+  font-size: 20px;
+  padding: 0 0 1rem 0;
+  background-color: #303134;
+  border-radius: 0 0 20px 20px;
+  display: none;
+}
+.suggestion-bar p{
+  padding: 10px 1rem;
+  display: flex;
+  align-items: center;
+}
+.suggestion-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.suggestion-button button{
+  padding: 1em 1rem;
+  background-color: #3c4043;
+  border-radius: 4px;
+  color: inherit;
+  border: none;
+}
+.suggestion-bar p:hover{
+  background-color: #3c4043;
+}
+.search-menu:focus-within + .suggestion-bar {
+  display: block;
+}
+.shape {
+  position: fixed;
+  bottom: 0;
+  right: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shape #green {
+  max-height: 38px;
+  max-width: 38px;
+}
+
+.shape #yellow {
+  max-height: 132px;
+  max-width: 132px;
+}
+
+.shape #red {
+  max-height: 73px;
+  max-width: 73px;
+}
+
+.shape #blue {
+  max-height: 93px;
+  max-width: 93px;
+}

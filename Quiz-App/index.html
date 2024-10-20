@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <img class="blackboard" src="./icons/blackboard.png" alt="loading...">
+
+        <!-- Home-Page -->
+         <section class="home">
+          <p class="welcome-text">Welcome to Quiz App</p>
+            <button class="home-btn" onclick="startQuestion()">Click to start Quiz</button>
+         </section>
+
+        <!-- Questions-Page -->
+        <section class="timer hide">Time left <span></span></section>
+        <section class="question-page hide">
+          <div class="question">
+            1.What is the correct way to declare a variable in JavaScript?
+          </div>
+            <ul type="none" class="options">
+              <button onclick="checkA()">
+                <li >
+                  x = 10
+                </li>
+                <p class="hide">your choice</p>
+                  <img class="close hide" src="./icons/icon-close.svg" alt="loading...">
+                  <img class="check hide" src="./icons/icon-check.svg" alt="loading...">
+              </button>
+              <button  onclick="checkB()">
+                <li>
+                  var x = 10
+                  
+                </li>
+                <p class="hide">your choice</p>
+                <img class="close hide" src="./icons/icon-close.svg" alt="loading...">
+                <img class="check hide" src="./icons/icon-check.svg" alt="loading...">
+              </button>
+              <button  onclick="checkC()">
+                <li>
+                  x = 10
+                </li>
+                <p class="hide">your choice</p>
+                <img class="close hide" src="./icons/icon-close.svg" alt="loading...">
+                <img class="check hide" src="./icons/icon-check.svg" alt="loading...">
+              </button>
+              <button onclick="checkD()">
+                <li >
+                  int x = 10 
+                </li>
+                <p class="hide">your choice</p>
+                <img class="close hide" src="./icons/icon-close.svg" alt="loading...">
+                <img class="check hide" src="./icons/icon-check.svg" alt="loading...">
+              </button>
+            </ul type="none">
+          <div class="btn">
+            <button class="btn-next" onclick="goToPreviousQuestion()"><img src="./icons/icon-back-arrow.svg" alt="loading...">Previous</button>
+            <button class="btn-next" onclick="goToNextQuestion()">Next<img src="./icons/icon-forward-arrow.svg" alt="loading..."></button>
+          </div>
+        </section>
+
+         <!-- Score-Page -->
+          <section class="score hide">
+            <h1>Your Score</h1>
+          <button class="home-btn" onclick="startQuestion()">Click to start Quiz again</button>
+          </section>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

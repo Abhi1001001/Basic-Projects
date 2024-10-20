@@ -1,0 +1,199 @@
+body{
+    background: url("./icons/background.jpeg");
+    background-size: cover;
+    overflow: hidden;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.container{
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* question page styling */
+.question{
+    width: 100%;
+    font-size: 2rem;
+    text-align: left;
+    align-items: center;
+    z-index: 1;
+}
+.question-page{
+    z-index: 1;
+    width: 75%;
+}
+.options{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.options button {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #a8a8a8;
+    color: #ffffff;
+    border-radius: 1rem;
+    background-color: transparent;
+    padding: 2rem;
+    font-size: 25px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.btn-next{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 25px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+
+}
+p{
+    font-size: 15px;
+}
+.blackboard{
+    position: absolute;
+    height: 100%;
+    width: 70vw;
+}
+
+/* timer section styling */
+.timer{
+    width: 75%;
+    z-index: 1;
+    text-align: right;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* score section styling */
+.score{
+    z-index: 1;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* display none class */
+.hide{
+    display: none;
+}
+
+/* home page styling */
+.home{
+    z-index: 1;
+    text-align: center;
+}
+.welcome-text{
+    font-size: 4rem;
+    padding: 0 1rem 0 1rem;
+}
+.home-btn{
+    background-color: inherit;
+    border: 2px solid #d3d3d3;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+}
+.home-btn:hover{
+    color: #dbdbdb;
+    border: 2px solid #dbdbdb;
+    scale: 1.1;
+    transition: 0.3s ;
+    
+}
+
+/* media querys */
+@media (max-width: 850px) {
+    .question{
+        font-size: 1.5rem;
+    }
+    .options button{
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+    .options div {
+        height: 4vh;
+    }
+    .btn-next{
+        font-size: 1rem;
+    }
+    .welcome-text{
+        font-size: 3rem;
+        padding: 0 1rem 0 1rem;
+    }
+    .home-btn{
+        font-size: 1rem;
+    }
+    .blackboard{
+        width: 75vw;
+    }
+    .timer{
+        font-size: 1rem;
+    }
+    .score{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .container{
+        width: 95vw;
+    }
+    .question{
+        font-size: 1rem;
+    }
+    .options button{
+        font-size: 0.7rem;
+        padding: 1rem;
+    }
+    .options div {
+        height: 3vh;
+        
+    }
+    .btn-next{
+        font-size: 0.7rem;
+    }
+    .welcome-text{
+        font-size: 2rem;
+        padding: 0 1rem 0 1rem;
+    }
+    .home-btn{
+        font-size: 0.7rem;
+    }
+    .blackboard{
+        height: 70vh;
+        width: 100%;
+    }
+    .timer{
+        font-size: 1rem;
+    }
+    .score{
+        font-size: 0.8rem;
+    }
+}

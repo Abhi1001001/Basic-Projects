@@ -57,146 +57,688 @@
   <body>
     <main>
       <!-- navbar ------------------------------ -->
-      <nav
-        class="sticky top-0 bg-white z-50"
-      >
-       <div class="max-w-7xl m-auto flex items-center justify-between px-10 py-2">
-         <div class="flex justify-center items-center gap-4">
-          <button popovertarget="mobile-menu" class="lg:hidden block">
-            <img
-              class="w-8 cursor-pointer"
-              src="../icons/menu-icon.svg"
-              alt="path-error"
-            />
-          </button>
-          <a href="#"
-            ><img class="w-40" src="../icons/fresh.svg" alt="path-error"
-          /></a>
-        </div>
-
-        <!-- mobile menu --------------- -->
+      <nav class="sticky top-0 bg-white z-50">
         <div
-          id="mobile-menu"
-          popover="auto"
-          class="w-full fixed top-[50%] left-0 bg-white rounded-xl p-10 space-y-2"
+          class="max-w-7xl m-auto flex items-center justify-between sm:px-10 px-2 py-2"
         >
-          <!-- <button class="bg-white p-1 absolute -top-12 left-2/5">
+          <div class="flex justify-center items-center gap-4">
+            <button popovertarget="mobile-menu" class="lg:hidden block">
+              <img
+                class="sm:w-8 w-6 cursor-pointer"
+                src="../icons/menu-icon.svg"
+                alt="path-error"
+              />
+            </button>
+            <a href="#"
+              ><img
+                class="sm:w-40 w-30"
+                src="../icons/fresh.svg"
+                alt="path-error"
+            /></a>
+          </div>
+
+          <!-- mobile menu --------------- -->
+          <div
+            id="mobile-menu"
+            popover="auto"
+            class="w-full fixed top-[50%] left-0 bg-white rounded-xl p-10 space-y-2"
+          >
+            <!-- <button class="bg-white p-1 absolute -top-12 left-2/5">
             <img class="w-6" src="../icons/close-icon.svg" alt="close-icon" />
           </button> -->
-          <button class="accordion w-full flex justify-between items-center">
-            Shop
-            <img class="w-6" src="../icons/down-arrow.svg" alt="path-error" />
-          </button>
-          <div class="panel hidden">
-            <p>Lorem ipsum</p>
-          </div>
-          <hr />
-          <button class="accordion w-full flex justify-between items-center">
-            Page<img
-              class="w-6"
-              src="../icons/down-arrow.svg"
-              alt="path-error"
-            />
-          </button>
+            <button class="accordion w-full flex justify-between items-center">
+              Shop
+              <img class="w-6" src="../icons/down-arrow.svg" alt="path-error" />
+            </button>
+            <div class="panel hidden">
+              <p>Lorem ipsum</p>
+            </div>
+            <hr />
+            <button class="accordion w-full flex justify-between items-center">
+              Page<img
+                class="w-6"
+                src="../icons/down-arrow.svg"
+                alt="path-error"
+              />
+            </button>
 
-          <div class="panel hidden">
-            <p>Lorem ipsum</p>
-          </div>
-          <hr />
-          <button class="accordion w-full flex justify-between items-center">
-            Account<img
-              class="w-6"
-              src="../icons/down-arrow.svg"
-              alt="path-error"
-            />
-          </button>
+            <div class="panel hidden">
+              <p>Lorem ipsum</p>
+            </div>
+            <hr />
+            <button class="accordion w-full flex justify-between items-center">
+              Account<img
+                class="w-6"
+                src="../icons/down-arrow.svg"
+                alt="path-error"
+              />
+            </button>
 
-          <div class="panel hidden">
-            <p>Lorem ipsum</p>
-          </div>
-          <hr />
-          <button class="accordion w-full flex justify-between items-center">
-            Menu<img
-              class="w-6"
-              src="../icons/down-arrow.svg"
-              alt="path-error"
-            />
-          </button>
+            <div class="panel hidden">
+              <p>Lorem ipsum</p>
+            </div>
+            <hr />
+            <button class="accordion w-full flex justify-between items-center">
+              Menu<img
+                class="w-6"
+                src="../icons/down-arrow.svg"
+                alt="path-error"
+              />
+            </button>
 
-          <div class="panel hidden">
-            <p>Lorem ipsum</p>
-          </div>
-          <hr />
-          <button class="accordion w-full flex justify-between items-center">
-            Mega Menu<img
-              class="w-6"
-              src="../icons/down-arrow.svg"
-              alt="path-error"
-            />
-          </button>
+            <div class="panel hidden">
+              <p>Lorem ipsum</p>
+            </div>
+            <hr />
+            <button class="accordion w-full flex justify-between items-center">
+              Mega Menu<img
+                class="w-6"
+                src="../icons/down-arrow.svg"
+                alt="path-error"
+              />
+            </button>
 
-          <div class="panel hidden">
-            <p>Lorem ipsum</p>
-          </div>
-          <hr />
-          <button class="accordion w-full flex justify-between items-center">
-            Docs<img
-              class="w-6"
-              src="../icons/down-arrow.svg"
-              alt="path-error"
-            />
-          </button>
+            <div class="panel hidden">
+              <p>Lorem ipsum</p>
+            </div>
+            <hr />
+            <button class="accordion w-full flex justify-between items-center">
+              Docs<img
+                class="w-6"
+                src="../icons/down-arrow.svg"
+                alt="path-error"
+              />
+            </button>
 
-          <div class="panel hidden">
-            <p>
-              Lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing
-              elit. Ducimus maiores consequatur aliquam atque error quam odit
-              voluptates dolor ipsa quas est molestiae iure adipisci, obcaecati
-              praesentium optio repudiandae, harum alias libero reprehenderit
-              delectus amet? Placeat omnis officia reiciendis maiores ab quaerat
-              neque dolores aspernatur voluptate sint? Mollitia aspernatur
-              itaque minima.
-            </p>
+            <div class="panel hidden">
+              <p>
+                Lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ducimus maiores consequatur aliquam atque error quam odit
+                voluptates dolor ipsa quas est molestiae iure adipisci,
+                obcaecati praesentium optio repudiandae, harum alias libero
+                reprehenderit delectus amet? Placeat omnis officia reiciendis
+                maiores ab quaerat neque dolores aspernatur voluptate sint?
+                Mollitia aspernatur itaque minima.
+              </p>
+            </div>
+            <hr />
+            <button class="w-full py-2 bg-[#201f1b] text-white">Sign-in</button>
           </div>
-          <hr />
-          <button class="w-full py-2 bg-[#201f1b] text-white">Sign-in</button>
+
+          <!-- desktop menu --------------- -->
+          <div class="items-center justify-center gap-5 hidden lg:flex">
+            <div class="relative group">
+              <button
+                id="menu1"
+                class="flex justify-center items-center cursor-pointer"
+              >
+                <span>Shop</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <!-- Dropdown Menu -->
+              <div
+                id="dropdown1"
+                class="absolute mt-5 w-max bg-white border rounded shadow z-10 justify-center px-5 py-2 gap-5 hidden -left-[350%] group-hover:flex"
+              >
+                <div class="flex flex-col gap-1 shrink-0">
+                  <h5
+                    class="hover:bg-gray-100 cursor-pointer font-semibold py-1"
+                    data-value="Apple"
+                  >
+                    Shop Layout
+                  </h5>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Grid
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - List
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Left Sidebar
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Right Sidebar
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Top Filter
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Collection
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-1 shrink-0">
+                  <h5
+                    class="hover:bg-gray-100 cursor-pointer font-semibold py-1"
+                    data-value="Apple"
+                  >
+                    Product Layout
+                  </h5>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Color Swatch
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Stacked
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Left Thumbnail
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Bottom
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Thumbnail
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-1 shrink-0">
+                  <h5
+                    class="hover:bg-gray-100 cursor-pointer font-semibold py-1"
+                    data-value="Apple"
+                  >
+                    Shop Checkout
+                  </h5>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Cart
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Checkout
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Thank You
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Order Track
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Thumbnail
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative group">
+              <button
+              id="menu2"
+                class="flex justify-center items-center cursor-pointer dropdown-button"
+              >
+                <span>Page</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <!-- Dropdown Menu -->
+              <div
+              id="dropdown2"
+                class="absolute mt-5 w-max bg-white border rounded shadow z-10 justify-center px-5 py-2 gap-5 hidden -left-[100%] group-hover:block"
+              >
+                <div class="flex flex-col gap-1 shrink-0">
+                  <h5
+                    class="hover:bg-gray-100 cursor-pointer py-1"
+                    data-value="Apple"
+                  >
+                    Blog
+                  </h5>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Blog-Single
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Blog-Category
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    About us
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    FAQ
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Review
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    404 Error
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Contact
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Terms Conditions
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative group">
+              <button
+              id="menu3"
+                class="flex justify-center items-center cursor-pointer dropdown-button"
+              >
+                <span>Account</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <!-- Dropdown Menu -->
+              <div
+                id="dropdown3"
+                class="absolute mt-5 w-max bg-white border rounded shadow z-10 justify-center px-5 py-2 gap-5 hidden -left-[60%] group-hover:block"
+              >
+                <div class="flex flex-col gap-1 shrink-0">
+                  <h5
+                    class="hover:bg-gray-100 cursor-pointer py-1"
+                    data-value="Apple"
+                  >
+                    Auth
+                  </h5>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Order History
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Wishlist
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Payment Methode
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    My Reviews
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Personal Info
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Address
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Notification
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative group">
+              <button
+              id="menu4"
+                class="flex justify-center items-center cursor-pointer dropdown-button"
+              >
+                <span>Mega Menu</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <!-- Dropdown Menu -->
+              <div
+                id="dropdown4"
+                class="absolute mt-5 w-max bg-white border rounded shadow z-10 justify-center px-5 py-2 gap-5 hidden -left-[150%] group-hover:flex"
+              >
+                <div class="flex flex-col gap-1 shrink-0">
+                  <div>
+                    <h5
+                      class="hover:bg-gray-100 cursor-pointer font-semibold py-1"
+                      data-value="Apple"
+                    >
+                      Dining Room & Kitchen
+                    </h5>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Dining Table
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Chairs
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Plates, dishes and bown
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Sideboards
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Cutlery
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Glasses
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Accessories
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Dining Rooms & Kitchen textiles
+                    </div>
+                  </div>
+                  <div>
+                    <h5
+                      class="hover:bg-gray-100 cursor-pointer font-semibold py-1"
+                      data-value="Apple"
+                    >
+                      Bedroom
+                    </h5>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Cupboards
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Beds
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Bed linen
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-1 shrink-0">
+                  <h5
+                    class="hover:bg-gray-100 cursor-pointer font-semibold py-1"
+                    data-value="Apple"
+                  >
+                    Living Rooms
+                  </h5>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Cupboards
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Stacked
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Couches
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Coffee tables
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Side Tables & Consoles
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Decoration
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Lighting
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Parlour games & lifestyle
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-1 shrink-0">
+                  <div>
+                    <h5
+                      class="hover:bg-gray-100 cursor-pointer font-semibold py-1"
+                      data-value="Apple"
+                    >
+                      Garden
+                    </h5>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Garden cenches
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Garden chairs
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Garden table
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Garden decorations
+                    </div>
+                  </div>
+                  <div>
+                    <h5
+                      class="hover:bg-gray-100 cursor-pointer font-semibold py-1"
+                      data-value="Apple"
+                    >
+                      Home Office
+                    </h5>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Desks
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Decoration
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Table & Desk lamp
+                    </div>
+                  </div>
+                  <div>
+                    <h5
+                      class="hover:bg-gray-100 cursor-pointer font-semibold py-1"
+                      data-value="Apple"
+                    >
+                      Bathroom
+                    </h5>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Decorations
+                    </div>
+                    <div
+                      class="hover:bg-gray-100 cursor-pointer"
+                    >
+                      Textiles
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative group">
+              <button
+              id="menu5"
+                class="flex justify-center items-center cursor-pointer dropdown-button"
+              >
+                <span>Docs</span>
+                <svg
+                  class="w-4 h-4 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <!-- Dropdown Menu -->
+              <div
+                id="dropdown5"
+                class="absolute mt-5 w-max bg-white border rounded shadow z-10 justify-center px-5 py-2 gap-5 hidden -left-[110%] group-hover:block"
+              >
+                <div class="flex flex-col gap-1 shrink-0">
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Decomentations
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    UI Componenets
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Changelog
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Right Sidebar
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Top Filter
+                  </div>
+                  <div
+                    class="hover:bg-gray-100 cursor-pointer"
+                  >
+                    Shop - Collection
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center sm:gap-5 gap-2">
+            <select class="w-fit outline-none border-none sm:block hidden">
+              <option value="">
+                <img src="../images/au.png" alt="au" /><span
+                  >Australia (AUD $)</span
+                >
+              </option>
+              <option value="">
+                <img src="../images/au.png" alt="au" /><span
+                  >India (INR $)</span
+                >
+              </option>
+              <option value="">
+                <img src="../images/fr.png" alt="fr" /><span
+                  >France (EUR $)</span
+                >
+              </option>
+              <option value="">
+                <img src="../images/gb-ukm.png" alt="au" /><span
+                  >United Kingdom (GBP $)</span
+                >
+              </option>
+            </select>
+            <img class="w-5" src="../icons/search-icon.svg" alt="path-error" />
+            <img class="w-5" src="../icons/person-icon.svg" alt="path-error" />
+            <img class="w-5" src="../icons/cart-icon.svg" alt="path-error" />
+          </div>
         </div>
-
-        <!-- desktop menu --------------- -->
-        <div class="items-center justify-center gap-5 hidden lg:flex">
-          <a href="#" class="flex"
-            >Shop
-            <img class="w-6" src="../icons/down-arrow.svg" alt="path-error"
-          /></a>
-          <a href="#" class="flex"
-            >Page
-            <img class="w-6" src="../icons/down-arrow.svg" alt="path-error"
-          /></a>
-          <a href="#" class="flex"
-            >Account
-            <img class="w-6" src="../icons/down-arrow.svg" alt="path-error"
-          /></a>
-          <a href="#" class="flex"
-            >Menu
-            <img class="w-6" src="../icons/down-arrow.svg" alt="path-error"
-          /></a>
-          <a href="#" class="flex"
-            >Mega Menu
-            <img class="w-6" src="../icons/down-arrow.svg" alt="path-error"
-          /></a>
-          <a href="#" class="flex"
-            >Docs
-            <img class="w-6" src="../icons/down-arrow.svg" alt="path-error"
-          /></a>
-        </div>
-
-        <div class="flex items-center justify-center gap-5">
-          <a href="#"></a>
-          <img class="w-5" src="../icons/search-icon.svg" alt="path-error" />
-          <img class="w-5" src="../icons/person-icon.svg" alt="path-error" />
-          <img class="w-5" src="../icons/cart-icon.svg" alt="path-error" />
-        </div>
-       </div>
       </nav>
 
       <!-- hero section -------------------- -->
@@ -370,276 +912,277 @@
       <section class="px-10 py-20">
         <div class="max-w-7xl m-auto">
           <h3 class="md:text-4xl text-3xl font-semibold md:px-10">
-          New arrivals
-        </h3>
-        <div
-          class="flex sm:flex-row flex-col justify-between md:items-end sm:items-center items-start md:px-10 md:text-md text-sm py-2 md:gap-1 gap-4"
-        >
-          <p class="text-[#6f7575] text-lg">
-            We are inspired by the realities of life today, in which traditional
-            divides between personal and professional space are more fluid.
-          </p>
-          <a
-            href="#"
-            class="flex justify-center items-center gap-1 whitespace-nowrap"
+            New arrivals
+          </h3>
+          <div
+            class="flex sm:flex-row flex-col justify-between md:items-end sm:items-center items-start md:px-10 md:text-md text-sm py-2 md:gap-1 gap-4"
           >
-            View all
-            <img
-              class="w-5 h-5 p-1 border rounded-full"
-              src="../icons/right-arrow.svg"
-              alt="path-error"
-            />
-          </a>
-        </div>
-        <div class="flex py-10 gap-2 overflow-x-scroll">
-          <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
-            <div class="relative group">
-              <img src="../images/product-img-1.jpg" alt="path-error" />
-              <img
-                class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
-                src="../images/product-img-hover-1.jpg"
-                alt="path-error"
-              />
-            </div>
-            <div class="flex justify-between items-center">
-              <p class="text-[#656156] font-semibold">Brand</p>
-              <div class="flex items-center justify-center py-1 gap-1">
-                <span class="text-[#656156]">4.3⭐</span>
-                <span
-                  ><img
-                    class="w-4"
-                    src="../icons/favorite-icon.svg"
-                    alt="path-error"
-                /></span>
-              </div>
-            </div>
-            <p class="py-1 font-semibold">Sofa with wood legs</p>
-            <p class="py-1 font-semibold">₹3400.00</p>
-            <div class="py-1 flex gap-1">
-              <div class="w-4 h-4 bg-black"></div>
-              <div class="w-4 h-4 bg-[#dc2623]"></div>
-              <div class="w-4 h-4 bg-[#15a448]"></div>
-              <div class="w-4 h-4 bg-[#0ea6e9]"></div>
-            </div>
-          </div>
-
-          <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
-            <div class="relative group">
-              <img src="../images/product-img-2.jpg" alt="path-error" />
-              <img
-                class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
-                src="../images/product-img-hover-2.jpg"
-                alt="path-error"
-              />
-            </div>
-            <div class="flex justify-between items-center">
-              <p class="text-[#656156] font-semibold">Brand</p>
-              <div class="flex items-center justify-center py-1 gap-1">
-                <span class="text-[#656156]">4.2⭐</span>
-                <span
-                  ><img
-                    class="w-4"
-                    src="../icons/favorite-icon.svg"
-                    alt="path-error"
-                /></span>
-              </div>
-            </div>
-            <p class="py-1 font-semibold">Floor Lamp</p>
-            <p class="py-1 font-semibold">₹9500.00</p>
-            <div class="py-1 flex gap-1">
-              <div class="w-4 h-4 bg-black"></div>
-              <div class="w-4 h-4 bg-[#15a448]"></div>
-            </div>
-          </div>
-
-          <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
-            <div class="relative group">
-              <img src="../images/product-img-3.jpg" alt="path-error" />
-              <img
-                class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
-                src="../images/product-img-hover-3.jpg"
-                alt="path-error"
-              />
-              <span
-                class="absolute top-2 left-2 bg-[#0ea6e9] px-2 py-1 text-xs text-white"
-                >New</span
-              >
-            </div>
-            <div class="flex justify-between items-center">
-              <p class="text-[#656156] font-semibold">Brand</p>
-              <div class="flex items-center justify-center py-1 gap-1">
-                <span class="text-[#656156]">4.5⭐</span>
-                <span
-                  ><img
-                    class="w-4"
-                    src="../icons/favorite-icon.svg"
-                    alt="path-error"
-                /></span>
-              </div>
-            </div>
-            <p class="py-1 font-semibold">Armchair</p>
-            <p class="py-1 font-semibold">
-              ₹7500.00 <del class="text-gray-500">₹9500.00</del>
+            <p class="text-[#6f7575] text-lg">
+              We are inspired by the realities of life today, in which
+              traditional divides between personal and professional space are
+              more fluid.
             </p>
-            <div class="py-1 flex gap-1">
-              <div class="w-4 h-4 bg-black"></div>
-            </div>
-          </div>
-
-          <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
-            <div class="relative group">
-              <img src="../images/product-img-4.jpg" alt="path-error" />
+            <a
+              href="#"
+              class="flex justify-center items-center gap-1 whitespace-nowrap"
+            >
+              View all
               <img
-                class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
-                src="../images/product-img-hover-4.jpg"
+                class="w-5 h-5 p-1 border rounded-full"
+                src="../icons/right-arrow.svg"
                 alt="path-error"
               />
-            </div>
-            <div class="flex justify-between items-center">
-              <p class="text-[#656156] font-semibold">Brand</p>
-              <div class="flex items-center justify-center py-1 gap-1">
-                <span class="text-[#656156]">4.3⭐</span>
-                <span
-                  ><img
-                    class="w-4"
-                    src="../icons/favorite-icon.svg"
-                    alt="path-error"
-                /></span>
+            </a>
+          </div>
+          <div class="flex py-10 gap-2 overflow-x-scroll">
+            <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
+              <div class="relative group">
+                <img src="../images/product-img-1.jpg" alt="path-error" />
+                <img
+                  class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
+                  src="../images/product-img-hover-1.jpg"
+                  alt="path-error"
+                />
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-[#656156] font-semibold">Brand</p>
+                <div class="flex items-center justify-center py-1 gap-1">
+                  <span class="text-[#656156]">4.3⭐</span>
+                  <span
+                    ><img
+                      class="w-4"
+                      src="../icons/favorite-icon.svg"
+                      alt="path-error"
+                  /></span>
+                </div>
+              </div>
+              <p class="py-1 font-semibold">Sofa with wood legs</p>
+              <p class="py-1 font-semibold">₹3400.00</p>
+              <div class="py-1 flex gap-1">
+                <div class="w-4 h-4 bg-black"></div>
+                <div class="w-4 h-4 bg-[#dc2623]"></div>
+                <div class="w-4 h-4 bg-[#15a448]"></div>
+                <div class="w-4 h-4 bg-[#0ea6e9]"></div>
               </div>
             </div>
-            <p class="py-1 font-semibold">Comfort Seat Chair</p>
-            <p class="py-1 font-semibold">₹7800.00</p>
-            <div class="py-1 flex gap-1">
-              <div class="w-4 h-4 bg-black"></div>
-              <div class="w-4 h-4 bg-[#0ea6e9]"></div>
-              <div class="w-4 h-4 bg-[#15a448]"></div>
-            </div>
-          </div>
 
-          <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
-            <div class="relative group">
-              <img src="../images/product-img-5.jpg" alt="path-error" />
-              <img
-                class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
-                src="../images/product-img-hover-5.jpg"
-                alt="path-error"
-              />
-            </div>
-            <div class="flex justify-between items-center">
-              <p class="text-[#656156] font-semibold">Brand</p>
-              <div class="flex items-center justify-center py-1 gap-1">
-                <span class="text-[#656156]">4.5⭐</span>
-                <span
-                  ><img
-                    class="w-4"
-                    src="../icons/favorite-icon.svg"
-                    alt="path-error"
-                /></span>
+            <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
+              <div class="relative group">
+                <img src="../images/product-img-2.jpg" alt="path-error" />
+                <img
+                  class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
+                  src="../images/product-img-hover-2.jpg"
+                  alt="path-error"
+                />
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-[#656156] font-semibold">Brand</p>
+                <div class="flex items-center justify-center py-1 gap-1">
+                  <span class="text-[#656156]">4.2⭐</span>
+                  <span
+                    ><img
+                      class="w-4"
+                      src="../icons/favorite-icon.svg"
+                      alt="path-error"
+                  /></span>
+                </div>
+              </div>
+              <p class="py-1 font-semibold">Floor Lamp</p>
+              <p class="py-1 font-semibold">₹9500.00</p>
+              <div class="py-1 flex gap-1">
+                <div class="w-4 h-4 bg-black"></div>
+                <div class="w-4 h-4 bg-[#15a448]"></div>
               </div>
             </div>
-            <p class="py-1 font-semibold">High Back Boss Chair</p>
-            <p class="py-1 font-semibold">₹5500.00</p>
-            <div class="py-1 flex gap-1">
-              <div class="w-4 h-4 bg-black"></div>
-              <div class="w-4 h-4 bg-[#15a448]"></div>
-            </div>
-          </div>
 
-          <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
-            <div class="relative group">
-              <img src="../images/product-img-6.jpg" alt="path-error" />
-              <img
-                class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
-                src="../images/product-img-hover-6.jpg"
-                alt="path-error"
-              />
-              <span
-                class="absolute top-2 left-2 bg-[#dc2625] px-2 py-1 text-xs text-white"
-                >On Sale</span
-              >
-            </div>
-            <div class="flex justify-between items-center">
-              <p class="text-[#656156] font-semibold">Brand</p>
-              <div class="flex items-center justify-center py-1 gap-1">
-                <span class="text-[#656156]">4.3⭐</span>
+            <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
+              <div class="relative group">
+                <img src="../images/product-img-3.jpg" alt="path-error" />
+                <img
+                  class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
+                  src="../images/product-img-hover-3.jpg"
+                  alt="path-error"
+                />
                 <span
-                  ><img
-                    class="w-4"
-                    src="../icons/favorite-icon.svg"
-                    alt="path-error"
-                /></span>
+                  class="absolute top-2 left-2 bg-[#0ea6e9] px-2 py-1 text-xs text-white"
+                  >New</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-[#656156] font-semibold">Brand</p>
+                <div class="flex items-center justify-center py-1 gap-1">
+                  <span class="text-[#656156]">4.5⭐</span>
+                  <span
+                    ><img
+                      class="w-4"
+                      src="../icons/favorite-icon.svg"
+                      alt="path-error"
+                  /></span>
+                </div>
+              </div>
+              <p class="py-1 font-semibold">Armchair</p>
+              <p class="py-1 font-semibold">
+                ₹7500.00 <del class="text-gray-500">₹9500.00</del>
+              </p>
+              <div class="py-1 flex gap-1">
+                <div class="w-4 h-4 bg-black"></div>
               </div>
             </div>
-            <p class="py-1 font-semibold">Fancy Metal Wall Clock</p>
-            <p class="py-1 font-semibold">
-              ₹3500.00 <del class="text-gray-500">₹4500.00</del>
-            </p>
-            <div class="py-1 flex gap-1">
-              <div class="w-4 h-4 bg-black"></div>
-              <div class="w-4 h-4 bg-[#15a448]"></div>
-            </div>
-          </div>
 
-          <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
-            <div class="relative group">
-              <img src="../images/product-img-7.jpg" alt="path-error" />
-              <img
-                class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
-                src="../images/product-img-hover-7.jpg"
-                alt="path-error"
-              />
-            </div>
-            <div class="flex justify-between items-center">
-              <p class="text-[#656156] font-semibold">Brand</p>
-              <div class="flex items-center justify-center py-1 gap-1">
-                <span class="text-[#656156]">4.5⭐</span>
-                <span
-                  ><img
-                    class="w-4"
-                    src="../icons/favorite-icon.svg"
-                    alt="path-error"
-                /></span>
+            <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
+              <div class="relative group">
+                <img src="../images/product-img-4.jpg" alt="path-error" />
+                <img
+                  class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
+                  src="../images/product-img-hover-4.jpg"
+                  alt="path-error"
+                />
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-[#656156] font-semibold">Brand</p>
+                <div class="flex items-center justify-center py-1 gap-1">
+                  <span class="text-[#656156]">4.3⭐</span>
+                  <span
+                    ><img
+                      class="w-4"
+                      src="../icons/favorite-icon.svg"
+                      alt="path-error"
+                  /></span>
+                </div>
+              </div>
+              <p class="py-1 font-semibold">Comfort Seat Chair</p>
+              <p class="py-1 font-semibold">₹7800.00</p>
+              <div class="py-1 flex gap-1">
+                <div class="w-4 h-4 bg-black"></div>
+                <div class="w-4 h-4 bg-[#0ea6e9]"></div>
+                <div class="w-4 h-4 bg-[#15a448]"></div>
               </div>
             </div>
-            <p class="py-1 font-semibold">Modern Metal Frame Stool</p>
-            <p class="py-1 font-semibold">₹8500.00</p>
-            <div class="py-1 flex gap-1">
-              <div class="w-4 h-4 bg-black"></div>
-              <div class="w-4 h-4 bg-[#dc2623]"></div>
-              <div class="w-4 h-4 bg-[#0ea6e9]"></div>
-            </div>
-          </div>
 
-          <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
-            <div class="relative group">
-              <img src="../images/product-img-9.jpg" alt="path-error" />
-              <img
-                class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
-                src="../images/product-img-hover-9.jpg"
-                alt="path-error"
-              />
-            </div>
-            <div class="flex justify-between items-center">
-              <p class="text-[#656156] font-semibold">Brand</p>
-              <div class="flex items-center justify-center py-1 gap-1">
-                <span class="text-[#656156]">4.3⭐</span>
-                <span
-                  ><img
-                    class="w-4"
-                    src="../icons/favorite-icon.svg"
-                    alt="path-error"
-                /></span>
+            <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
+              <div class="relative group">
+                <img src="../images/product-img-5.jpg" alt="path-error" />
+                <img
+                  class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
+                  src="../images/product-img-hover-5.jpg"
+                  alt="path-error"
+                />
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-[#656156] font-semibold">Brand</p>
+                <div class="flex items-center justify-center py-1 gap-1">
+                  <span class="text-[#656156]">4.5⭐</span>
+                  <span
+                    ><img
+                      class="w-4"
+                      src="../icons/favorite-icon.svg"
+                      alt="path-error"
+                  /></span>
+                </div>
+              </div>
+              <p class="py-1 font-semibold">High Back Boss Chair</p>
+              <p class="py-1 font-semibold">₹5500.00</p>
+              <div class="py-1 flex gap-1">
+                <div class="w-4 h-4 bg-black"></div>
+                <div class="w-4 h-4 bg-[#15a448]"></div>
               </div>
             </div>
-            <p class="py-1 font-semibold">Divine Trands Table Lamp</p>
-            <p class="py-1 font-semibold">₹7000.00</p>
-            <div class="py-1 flex gap-1">
-              <div class="w-4 h-4 bg-black"></div>
-              <div class="w-4 h-4 bg-[#15a448]"></div>
-              <div class="w-4 h-4 bg-[#dc2623]"></div>
+
+            <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
+              <div class="relative group">
+                <img src="../images/product-img-6.jpg" alt="path-error" />
+                <img
+                  class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
+                  src="../images/product-img-hover-6.jpg"
+                  alt="path-error"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-[#dc2625] px-2 py-1 text-xs text-white"
+                  >On Sale</span
+                >
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-[#656156] font-semibold">Brand</p>
+                <div class="flex items-center justify-center py-1 gap-1">
+                  <span class="text-[#656156]">4.3⭐</span>
+                  <span
+                    ><img
+                      class="w-4"
+                      src="../icons/favorite-icon.svg"
+                      alt="path-error"
+                  /></span>
+                </div>
+              </div>
+              <p class="py-1 font-semibold">Fancy Metal Wall Clock</p>
+              <p class="py-1 font-semibold">
+                ₹3500.00 <del class="text-gray-500">₹4500.00</del>
+              </p>
+              <div class="py-1 flex gap-1">
+                <div class="w-4 h-4 bg-black"></div>
+                <div class="w-4 h-4 bg-[#15a448]"></div>
+              </div>
+            </div>
+
+            <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
+              <div class="relative group">
+                <img src="../images/product-img-7.jpg" alt="path-error" />
+                <img
+                  class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
+                  src="../images/product-img-hover-7.jpg"
+                  alt="path-error"
+                />
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-[#656156] font-semibold">Brand</p>
+                <div class="flex items-center justify-center py-1 gap-1">
+                  <span class="text-[#656156]">4.5⭐</span>
+                  <span
+                    ><img
+                      class="w-4"
+                      src="../icons/favorite-icon.svg"
+                      alt="path-error"
+                  /></span>
+                </div>
+              </div>
+              <p class="py-1 font-semibold">Modern Metal Frame Stool</p>
+              <p class="py-1 font-semibold">₹8500.00</p>
+              <div class="py-1 flex gap-1">
+                <div class="w-4 h-4 bg-black"></div>
+                <div class="w-4 h-4 bg-[#dc2623]"></div>
+                <div class="w-4 h-4 bg-[#0ea6e9]"></div>
+              </div>
+            </div>
+
+            <div class="xl:w-52 md:w-36 sm:w-40 w-full shrink-0">
+              <div class="relative group">
+                <img src="../images/product-img-9.jpg" alt="path-error" />
+                <img
+                  class="absolute top-0 group-hover:transition-all opacity-0 group-hover:opacity-100 duration-1000"
+                  src="../images/product-img-hover-9.jpg"
+                  alt="path-error"
+                />
+              </div>
+              <div class="flex justify-between items-center">
+                <p class="text-[#656156] font-semibold">Brand</p>
+                <div class="flex items-center justify-center py-1 gap-1">
+                  <span class="text-[#656156]">4.3⭐</span>
+                  <span
+                    ><img
+                      class="w-4"
+                      src="../icons/favorite-icon.svg"
+                      alt="path-error"
+                  /></span>
+                </div>
+              </div>
+              <p class="py-1 font-semibold">Divine Trands Table Lamp</p>
+              <p class="py-1 font-semibold">₹7000.00</p>
+              <div class="py-1 flex gap-1">
+                <div class="w-4 h-4 bg-black"></div>
+                <div class="w-4 h-4 bg-[#15a448]"></div>
+                <div class="w-4 h-4 bg-[#dc2623]"></div>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -739,184 +1282,184 @@
 
       <!-- explore section ------------- -->
       <section class="p-10">
-       <div class="max-w-7xl m-auto">
-         <div
-          class="flex sm:flex-row flex-col sm:justify-between sm:items-center items-start sm:p-10 py-10 sm:gap-0 gap-2"
-        >
-          <h2 class="md:text-4xl sm:text-3xl text-2xl font-semibold">
-            Explore the collections
-          </h2>
-          <a
-            href="#"
-            class="flex justify-center items-center gap-1 whitespace-nowrap sm:text-md text-sm"
+        <div class="max-w-7xl m-auto">
+          <div
+            class="flex sm:flex-row flex-col sm:justify-between sm:items-center items-start sm:p-10 py-10 sm:gap-0 gap-2"
           >
-            View all
-            <img
-              class="w-5 h-5 p-1 border rounded-full"
-              src="../icons/right-arrow.svg"
-              alt="path-error"
-            />
-          </a>
-        </div>
+            <h2 class="md:text-4xl sm:text-3xl text-2xl font-semibold">
+              Explore the collections
+            </h2>
+            <a
+              href="#"
+              class="flex justify-center items-center gap-1 whitespace-nowrap sm:text-md text-sm"
+            >
+              View all
+              <img
+                class="w-5 h-5 p-1 border rounded-full"
+                src="../icons/right-arrow.svg"
+                alt="path-error"
+              />
+            </a>
+          </div>
 
-        <div class="flex justify-center items-center">
-          <div class="w-full swiper mySwiper">
-            <div class="swiper-wrapper flex justify-center items-center">
-              <div class="swiper-slide">
-                <div
-                  class="flex flex-col justify-center items-center bg-[#ecebe9] pb-5 group"
-                >
-                  <img src="../images/product-img-1.jpg" alt="path-error" />
-                  <div class="flex justify-center items-center gap-2">
-                    <span class="font-semibold">Armchair</span>
-                    <span>
-                      <img
-                        class="w-5 h-5 p-1 border rounded-full hidden group-hover:block"
-                        src="../icons/right-arrow.svg"
-                        alt="path-error"
-                      />
-                    </span>
+          <div class="flex justify-center items-center">
+            <div class="w-full swiper mySwiper">
+              <div class="swiper-wrapper flex justify-center items-center">
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col justify-center items-center bg-[#ecebe9] pb-5 group"
+                  >
+                    <img src="../images/product-img-1.jpg" alt="path-error" />
+                    <div class="flex justify-center items-center gap-2">
+                      <span class="font-semibold">Armchair</span>
+                      <span>
+                        <img
+                          class="w-5 h-5 p-1 border rounded-full hidden group-hover:block"
+                          src="../icons/right-arrow.svg"
+                          alt="path-error"
+                        />
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div
-                  class="flex flex-col justify-center items-center bg-[#ecebe9] pb-5 group"
-                >
-                  <img src="../images/product-img-9.jpg" alt="path-error" />
-                  <div class="flex justify-center items-center gap-2">
-                    <span class="font-semibold">Lamp</span>
-                    <span>
-                      <img
-                        class="w-5 h-5 p-1 border rounded-full hidden group-hover:block"
-                        src="../icons/right-arrow.svg"
-                        alt="path-error"
-                      />
-                    </span>
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col justify-center items-center bg-[#ecebe9] pb-5 group"
+                  >
+                    <img src="../images/product-img-9.jpg" alt="path-error" />
+                    <div class="flex justify-center items-center gap-2">
+                      <span class="font-semibold">Lamp</span>
+                      <span>
+                        <img
+                          class="w-5 h-5 p-1 border rounded-full hidden group-hover:block"
+                          src="../icons/right-arrow.svg"
+                          alt="path-error"
+                        />
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div
-                  class="flex flex-col justify-center items-center bg-[#ecebe9] pb-5 group"
-                >
-                  <img src="../images/product-img-10.jpg" alt="path-error" />
-                  <div class="flex justify-center items-center gap-2">
-                    <span class="font-semibold">Sofa</span>
-                    <span>
-                      <img
-                        class="w-5 h-5 p-1 border rounded-full hidden group-hover:block"
-                        src="../icons/right-arrow.svg"
-                        alt="path-error"
-                      />
-                    </span>
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col justify-center items-center bg-[#ecebe9] pb-5 group"
+                  >
+                    <img src="../images/product-img-10.jpg" alt="path-error" />
+                    <div class="flex justify-center items-center gap-2">
+                      <span class="font-semibold">Sofa</span>
+                      <span>
+                        <img
+                          class="w-5 h-5 p-1 border rounded-full hidden group-hover:block"
+                          src="../icons/right-arrow.svg"
+                          alt="path-error"
+                        />
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div
-                  class="flex flex-col justify-center items-center bg-[#ecebe9] pb-5 group"
-                >
-                  <img src="../images/product-img-7.jpg" alt="path-error" />
-                  <div class="flex justify-center items-center gap-2">
-                    <span class="font-semibold whitespace-nowrap"
-                      >Wood Stool</span
-                    >
-                    <span>
-                      <img
-                        class="w-5 h-5 p-1 border rounded-full hidden group-hover:block"
-                        src="../icons/right-arrow.svg"
-                        alt="path-error"
-                      />
-                    </span>
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col justify-center items-center bg-[#ecebe9] pb-5 group"
+                  >
+                    <img src="../images/product-img-7.jpg" alt="path-error" />
+                    <div class="flex justify-center items-center gap-2">
+                      <span class="font-semibold whitespace-nowrap"
+                        >Wood Stool</span
+                      >
+                      <span>
+                        <img
+                          class="w-5 h-5 p-1 border rounded-full hidden group-hover:block"
+                          src="../icons/right-arrow.svg"
+                          alt="path-error"
+                        />
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="swiper-slide">
-                <div
-                  class="flex flex-col justify-center items-center bg-[#ecebe9] pb-5 group"
-                >
-                  <img src="../images/product-img-8.jpg" alt="path-error" />
-                  <div class="flex justify-center items-center gap-2">
-                    <span class="font-semibold">Pot</span>
-                    <span>
-                      <img
-                        class="w-5 h-5 p-1 border rounded-full hidden group-hover:block"
-                        src="../icons/right-arrow.svg"
-                        alt="path-error"
-                      />
-                    </span>
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col justify-center items-center bg-[#ecebe9] pb-5 group"
+                  >
+                    <img src="../images/product-img-8.jpg" alt="path-error" />
+                    <div class="flex justify-center items-center gap-2">
+                      <span class="font-semibold">Pot</span>
+                      <span>
+                        <img
+                          class="w-5 h-5 p-1 border rounded-full hidden group-hover:block"
+                          src="../icons/right-arrow.svg"
+                          alt="path-error"
+                        />
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-       </div>
       </section>
 
       <!-- testimonial section -------------- -->
       <section class="bg-black text-white">
         <div class="max-w-7xl m-auto">
           <div class="swiper swiper-testimonial md:w-1/2 w-full">
-          <div class="text-center swiper-wrapper py-10">
-            <div class="swiper-slide !flex !flex-col !gap-10 md:px-0 px-5">
-              <p class="sm:text-2xl text-xl">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-                fugiat quisquam aut. Hic sequi quibusdam voluptatum. Aliquam
-                ipsam in nemo esse a, reiciendis nostrum sit, numquam saepe,
-                accusantium provident tenetur.
-              </p>
-              <div>
-                <img
-                  class="w-10 h-10 rounded-full m-auto"
-                  src="../images/avatar-13.jpg"
-                  alt="path-error"
-                />
-                <span>Mette Hay</span>
+            <div class="text-center swiper-wrapper py-10">
+              <div class="swiper-slide !flex !flex-col !gap-10 md:px-0 px-5">
+                <p class="sm:text-2xl text-xl">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                  fugiat quisquam aut. Hic sequi quibusdam voluptatum. Aliquam
+                  ipsam in nemo esse a, reiciendis nostrum sit, numquam saepe,
+                  accusantium provident tenetur.
+                </p>
+                <div>
+                  <img
+                    class="w-10 h-10 rounded-full m-auto"
+                    src="../images/avatar-13.jpg"
+                    alt="path-error"
+                  />
+                  <span>Mette Hay</span>
+                </div>
               </div>
-            </div>
 
-            <div class="swiper-slide !flex !flex-col !gap-10 md:px-0 px-5">
-              <p class="sm:text-2xl text-xl">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-                fugiat quisquam aut. Hic sequi quibusdam voluptatum. Aliquam
-                ipsam in nemo esse a, reiciendis nostrum sit, numquam saepe,
-                accusantium provident tenetur.
-              </p>
-              <div>
-                <img
-                  class="w-10 h-10 rounded-full m-auto"
-                  src="../images/avatar-14.jpg"
-                  alt="path-error"
-                />
-                <span>Mette Hay</span>
+              <div class="swiper-slide !flex !flex-col !gap-10 md:px-0 px-5">
+                <p class="sm:text-2xl text-xl">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                  fugiat quisquam aut. Hic sequi quibusdam voluptatum. Aliquam
+                  ipsam in nemo esse a, reiciendis nostrum sit, numquam saepe,
+                  accusantium provident tenetur.
+                </p>
+                <div>
+                  <img
+                    class="w-10 h-10 rounded-full m-auto"
+                    src="../images/avatar-14.jpg"
+                    alt="path-error"
+                  />
+                  <span>Mette Hay</span>
+                </div>
               </div>
-            </div>
 
-            <div class="swiper-slide !flex !flex-col !gap-10 md:px-0 px-5">
-              <p class="sm:text-2xl text-xl">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-                fugiat quisquam aut. Hic sequi quibusdam voluptatum. Aliquam
-                ipsam in nemo esse a, reiciendis nostrum sit, numquam saepe,
-                accusantium provident tenetur.
-              </p>
-              <div>
-                <img
-                  class="w-10 h-10 rounded-full m-auto"
-                  src="../images/avatar-15.jpg"
-                  alt="path-error"
-                />
-                <span>Mette Hay</span>
+              <div class="swiper-slide !flex !flex-col !gap-10 md:px-0 px-5">
+                <p class="sm:text-2xl text-xl">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                  fugiat quisquam aut. Hic sequi quibusdam voluptatum. Aliquam
+                  ipsam in nemo esse a, reiciendis nostrum sit, numquam saepe,
+                  accusantium provident tenetur.
+                </p>
+                <div>
+                  <img
+                    class="w-10 h-10 rounded-full m-auto"
+                    src="../images/avatar-15.jpg"
+                    alt="path-error"
+                  />
+                  <span>Mette Hay</span>
+                </div>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
         </div>
       </section>
 
@@ -924,123 +1467,123 @@
       <section class="p-10">
         <div class="max-w-7xl m-auto">
           <h2 class="text-4xl font-semibold py-10">Read our stories</h2>
-        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-10 mx-auto">
-          <div class="flex flex-col gap-4">
-            <div class="max-w-[400px] overflow-hidden relative">
-              <img
-                class="hover:scale-105 transition-all duration-300 ease-in-out"
-                src="../images/blog-img-1.jpg"
-                alt="path-error"
-              />
-              <span
-                class="absolute bottom-4 left-4 bg-[#0ea6e9] text-white px-2 py-1 text-xs"
-                >Home Décor Inspiration</span
-              >
-            </div>
-            <h5 class="text-2xl font-semibold">The Sowden Collection</h5>
-            <p class="text-[#767771]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque quis diam at risus gravida facilisis. In at lacus at
-              metus sodales rhoncus.
-            </p>
-            <div class="flex gap-4">
-              <div class="flex justify-center items-center gap-2">
+          <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-10 mx-auto">
+            <div class="flex flex-col gap-4">
+              <div class="max-w-[400px] overflow-hidden relative">
                 <img
-                  class="w-4"
-                  src="../icons/calender-icon.svg"
+                  class="hover:scale-105 transition-all duration-300 ease-in-out"
+                  src="../images/blog-img-1.jpg"
                   alt="path-error"
                 />
-                <span class="text-[#767771]">Jun 29, 2025</span>
+                <span
+                  class="absolute bottom-4 left-4 bg-[#0ea6e9] text-white px-2 py-1 text-xs"
+                  >Home Décor Inspiration</span
+                >
               </div>
-              <div class="flex justify-center items-center gap-2">
-                <img
-                  class="w-4"
-                  src="../icons/comment-icon.svg"
-                  alt="path-error"
-                />
-                <span class="text-[#767771]">1 Comment</span>
+              <h5 class="text-2xl font-semibold">The Sowden Collection</h5>
+              <p class="text-[#767771]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque quis diam at risus gravida facilisis. In at lacus
+                at metus sodales rhoncus.
+              </p>
+              <div class="flex gap-4">
+                <div class="flex justify-center items-center gap-2">
+                  <img
+                    class="w-4"
+                    src="../icons/calender-icon.svg"
+                    alt="path-error"
+                  />
+                  <span class="text-[#767771]">Jun 29, 2025</span>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                  <img
+                    class="w-4"
+                    src="../icons/comment-icon.svg"
+                    alt="path-error"
+                  />
+                  <span class="text-[#767771]">1 Comment</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="flex flex-col gap-4">
-            <div class="max-w-[400px] overflow-hidden relative">
-              <img
-                class="hover:scale-105 transition-all duration-300 ease-in-out"
-                src="../images/blog-img-2.jpg"
-                alt="path-error"
-              />
-              <span
-                class="absolute bottom-4 left-4 bg-[#e8b408] text-white px-2 py-1 text-xs"
-                >Furniture Care Tips</span
-              >
-            </div>
-            <h5 class="text-2xl font-semibold">
-              Discover our Kitchen Essentials
-            </h5>
-            <p class="text-[#767771]">
-              Aenean venenatis velit at dolor tempor iaculis. Vivamus rutrum
-              tortor in facilisis posuere. Nam posuere purus eget est porta
-              sagittis
-            </p>
-            <div class="flex gap-4">
-              <div class="flex justify-center items-center gap-2">
+            <div class="flex flex-col gap-4">
+              <div class="max-w-[400px] overflow-hidden relative">
                 <img
-                  class="w-4"
-                  src="../icons/calender-icon.svg"
+                  class="hover:scale-105 transition-all duration-300 ease-in-out"
+                  src="../images/blog-img-2.jpg"
                   alt="path-error"
                 />
-                <span class="text-[#767771]">Jun 29, 2025</span>
+                <span
+                  class="absolute bottom-4 left-4 bg-[#e8b408] text-white px-2 py-1 text-xs"
+                  >Furniture Care Tips</span
+                >
               </div>
-              <div class="flex justify-center items-center gap-2">
-                <img
-                  class="w-4"
-                  src="../icons/comment-icon.svg"
-                  alt="path-error"
-                />
-                <span class="text-[#767771]">1 Comment</span>
+              <h5 class="text-2xl font-semibold">
+                Discover our Kitchen Essentials
+              </h5>
+              <p class="text-[#767771]">
+                Aenean venenatis velit at dolor tempor iaculis. Vivamus rutrum
+                tortor in facilisis posuere. Nam posuere purus eget est porta
+                sagittis
+              </p>
+              <div class="flex gap-4">
+                <div class="flex justify-center items-center gap-2">
+                  <img
+                    class="w-4"
+                    src="../icons/calender-icon.svg"
+                    alt="path-error"
+                  />
+                  <span class="text-[#767771]">Jun 29, 2025</span>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                  <img
+                    class="w-4"
+                    src="../icons/comment-icon.svg"
+                    alt="path-error"
+                  />
+                  <span class="text-[#767771]">1 Comment</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="flex flex-col gap-4">
-            <div class="max-w-[400px] overflow-hidden relative">
-              <img
-                class="hover:scale-105 transition-all duration-300 ease-in-out"
-                src="../images/blog-img-1.jpg"
-                alt="path-error"
-              />
-              <span
-                class="absolute bottom-4 left-4 bg-[#17a34a] text-white px-2 py-1 text-xs"
-                >Interior Design</span
-              >
-            </div>
-            <h5 class="text-2xl font-semibold">Sustainable products</h5>
-            <p class="text-[#767771]">
-              Maecenas ultrices mollis dui, sed tempor mi pretium in.
-              Pellentesque placerat pellentesque libero, ut finibus magna
-              tincidunt vitae
-            </p>
-            <div class="flex gap-4">
-              <div class="flex justify-center items-center gap-2">
+            <div class="flex flex-col gap-4">
+              <div class="max-w-[400px] overflow-hidden relative">
                 <img
-                  class="w-4"
-                  src="../icons/calender-icon.svg"
+                  class="hover:scale-105 transition-all duration-300 ease-in-out"
+                  src="../images/blog-img-1.jpg"
                   alt="path-error"
                 />
-                <span class="text-[#767771]">Jun 29, 2025</span>
+                <span
+                  class="absolute bottom-4 left-4 bg-[#17a34a] text-white px-2 py-1 text-xs"
+                  >Interior Design</span
+                >
               </div>
-              <div class="flex justify-center items-center gap-2">
-                <img
-                  class="w-4"
-                  src="../icons/comment-icon.svg"
-                  alt="path-error"
-                />
-                <span class="text-[#767771]">1 Comment</span>
+              <h5 class="text-2xl font-semibold">Sustainable products</h5>
+              <p class="text-[#767771]">
+                Maecenas ultrices mollis dui, sed tempor mi pretium in.
+                Pellentesque placerat pellentesque libero, ut finibus magna
+                tincidunt vitae
+              </p>
+              <div class="flex gap-4">
+                <div class="flex justify-center items-center gap-2">
+                  <img
+                    class="w-4"
+                    src="../icons/calender-icon.svg"
+                    alt="path-error"
+                  />
+                  <span class="text-[#767771]">Jun 29, 2025</span>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                  <img
+                    class="w-4"
+                    src="../icons/comment-icon.svg"
+                    alt="path-error"
+                  />
+                  <span class="text-[#767771]">1 Comment</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -1090,120 +1633,123 @@
       <footer class="bg-[#ecebe9] px-10">
         <div class="max-w-7xl m-auto">
           <img
-          class="max-w-44 m-auto py-10"
-          src="../icons/fresh.svg"
-          alt="path-error"
-        />
-        <div
-          class="py-10 grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 m-auto"
-        >
-          <div class="flex flex-col gap-4">
-            <h6 class="text-xl font-semibold">Shop</h6>
-            <div class="flex flex-col gap-1">
-              <p>Kitchen</p>
-              <p>Decoration</p>
-              <p>Office</p>
-              <p>Lighting chair</p>
+            class="max-w-44 m-auto py-10"
+            src="../icons/fresh.svg"
+            alt="path-error"
+          />
+          <div
+            class="py-10 grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 m-auto"
+          >
+            <div class="flex flex-col gap-4">
+              <h6 class="text-xl font-semibold">Shop</h6>
+              <div class="flex flex-col gap-1">
+                <p>Kitchen</p>
+                <p>Decoration</p>
+                <p>Office</p>
+                <p>Lighting chair</p>
+              </div>
             </div>
-          </div>
 
-          <div class="flex flex-col gap-4">
-            <h6 class="text-xl font-semibold">FreshCart</h6>
-            <div class="flex flex-col gap-1">
-              <a href="#">About</a>
-              <a href="#">FAQ</a>
-              <a href="#">Contact</a>
-              <a href="#">Help Center</a>
-              <a href="#">Store Locator</a>
+            <div class="flex flex-col gap-4">
+              <h6 class="text-xl font-semibold">FreshCart</h6>
+              <div class="flex flex-col gap-1">
+                <a href="#">About</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Help Center</a>
+                <a href="#">Store Locator</a>
+              </div>
             </div>
-          </div>
 
-          <div class="flex flex-col gap-4">
-            <h6 class="text-xl font-semibold">Customer Service</h6>
-            <div class="flex flex-col gap-1">
-              <a href="#">My Orders</a>
-              <a href="#">My Account</a>
-              <a href="#">Track my Order</a>
-              <a href="#">Delivery Information</a>
-              <a href="#">Return Policy</a>
+            <div class="flex flex-col gap-4">
+              <h6 class="text-xl font-semibold">Customer Service</h6>
+              <div class="flex flex-col gap-1">
+                <a href="#">My Orders</a>
+                <a href="#">My Account</a>
+                <a href="#">Track my Order</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Return Policy</a>
+              </div>
             </div>
-          </div>
 
-          <div class="flex flex-col gap-4">
-            <h6 class="text-xl font-semibold">Contact us</h6>
-            <div class="flex flex-col gap-1">
-              <a href="#">Get in Touch</a>
-              <a href="#">0123 456 789</a>
-              <a href="#">Contact</a>
-              <a href="#">info@freshcart.com</a>
+            <div class="flex flex-col gap-4">
+              <h6 class="text-xl font-semibold">Contact us</h6>
+              <div class="flex flex-col gap-1">
+                <a href="#">Get in Touch</a>
+                <a href="#">0123 456 789</a>
+                <a href="#">Contact</a>
+                <a href="#">info@freshcart.com</a>
+              </div>
             </div>
-          </div>
 
-          <div class="flex flex-col gap-4">
-            <h6 class="text-xl font-semibold">Reviews</h6>
-            <div class="flex flex-col gap-1">
-              <a href="#"
-                ><img
-                  class="max-w-28"
-                  src="../icons/trustpilot-icon.svg"
-                  alt="path-error"
-              /></a>
-              <a href="#">TrustScore 4.8</a>
-              <a href="#">10020 reviews</a>
-              <div class="flex items-start gap-3 py-2">
+            <div class="flex flex-col gap-4">
+              <h6 class="text-xl font-semibold">Reviews</h6>
+              <div class="flex flex-col gap-1">
                 <a href="#"
                   ><img
-                    class="w-4"
-                    src="../icons/facebook-icon.svg"
+                    class="max-w-28"
+                    src="../icons/trustpilot-icon.svg"
                     alt="path-error"
                 /></a>
-                <a href="#"
-                  ><img
-                    class="w-4"
-                    src="../icons/linkedin-icon.svg"
-                    alt="path-error"
-                /></a>
-                <a href="#"
-                  ><img
-                    class="w-4"
-                    src="../icons/insta-icon.svg"
-                    alt="path-error"
-                /></a>
-                <a href="#"
-                  ><img class="w-4" src="../icons/yt-icon.svg" alt="path-error"
-                /></a>
+                <a href="#">TrustScore 4.8</a>
+                <a href="#">10020 reviews</a>
+                <div class="flex items-start gap-3 py-2">
+                  <a href="#"
+                    ><img
+                      class="w-4"
+                      src="../icons/facebook-icon.svg"
+                      alt="path-error"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      class="w-4"
+                      src="../icons/linkedin-icon.svg"
+                      alt="path-error"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      class="w-4"
+                      src="../icons/insta-icon.svg"
+                      alt="path-error"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      class="w-4"
+                      src="../icons/yt-icon.svg"
+                      alt="path-error"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <hr class="text-[#e0dfdb]" />
+          <hr class="text-[#e0dfdb]" />
 
-        <div
-          class="flex sm:flex-row flex-col justify-between items-center py-5 container m-auto"
-        >
-          <p>© 2024, FreshCart Furniture Theme. Powered</p>
-          <div class="flex gap-1">
-            <a href=""
-              ><img class="w-8" src="../icons/card1.svg" alt="path-error"
-            /></a>
-            <a href=""
-              ><img class="w-8" src="../icons/card2.svg" alt="path-error"
-            /></a>
-            <a href=""
-              ><img class="w-8" src="../icons/card3.svg" alt="path-error"
-            /></a>
-            <a href=""
-              ><img class="w-8" src="../icons/card4.svg" alt="path-error"
-            /></a>
-            <a href=""
-              ><img class="w-8" src="../icons/card5.svg" alt="path-error"
-            /></a>
-            <a href=""
-              ><img class="w-8" src="../icons/card6.svg" alt="path-error"
-            /></a>
+          <div
+            class="flex sm:flex-row flex-col justify-between items-center py-5 container m-auto"
+          >
+            <p>© 2024, FreshCart Furniture Theme. Powered</p>
+            <div class="flex gap-1">
+              <a href=""
+                ><img class="w-8" src="../icons/card1.svg" alt="path-error"
+              /></a>
+              <a href=""
+                ><img class="w-8" src="../icons/card2.svg" alt="path-error"
+              /></a>
+              <a href=""
+                ><img class="w-8" src="../icons/card3.svg" alt="path-error"
+              /></a>
+              <a href=""
+                ><img class="w-8" src="../icons/card4.svg" alt="path-error"
+              /></a>
+              <a href=""
+                ><img class="w-8" src="../icons/card5.svg" alt="path-error"
+              /></a>
+              <a href=""
+                ><img class="w-8" src="../icons/card6.svg" alt="path-error"
+              /></a>
+            </div>
           </div>
-        </div>
         </div>
       </footer>
     </main>
@@ -1213,8 +1759,8 @@
         direction: "horizontal",
         loop: true,
         autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+          delay: 2500,
+          disableOnInteraction: false,
         },
         pagination: {
           el: ".swiper-pagination",
@@ -1234,8 +1780,8 @@
         direction: "horizontal",
         loop: true,
         autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+          delay: 2500,
+          disableOnInteraction: false,
         },
 
         // If we need pagination
@@ -1292,11 +1838,11 @@
         },
       });
 
-      var acc = document.getElementsByClassName("accordion");
-      let i;
+      let acc = document.getElementsByClassName("accordion");
+      let i1;
 
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
+      for (i1 = 0; i1 < acc.length; i1++) {
+        acc[i1].addEventListener("click", function () {
           this.classList.toggle("active");
           var panel = this.nextElementSibling;
           if (panel.style.display === "block") {
@@ -1306,6 +1852,107 @@
           }
         });
       }
+
+      let shop = document.getElementById("menu1");
+      let pages = document.getElementById("menu2");
+      let account = document.getElementById("menu3");
+      let mega_menu = document.getElementById("menu4");
+      let docs = document.getElementById("menu5");
+      let shop_dropdown = document.getElementById("dropdown1");
+      let pages_dropdown = document.getElementById("dropdown2");
+      let account_dropdown = document.getElementById("dropdown3");
+      let mega_menu_dropdown = document.getElementById("dropdown4");
+      let docs_dropdown = document.getElementById("dropdown5");
+
+      shop.addEventListener("click", () => {
+        if (shop_dropdown.classList.contains("hidden")) {
+          shop_dropdown.classList.remove("hidden");
+          pages_dropdown.classList.add("hidden");
+          account_dropdown.classList.add("hidden");
+          mega_menu_dropdown.classList.add("hidden");
+          docs_dropdown.classList.add("hidden");
+          shop_dropdown.classList.add("flex");
+        } else {
+          shop_dropdown.classList.add("hidden");
+          shop_dropdown.classList.remove("flex");
+        }
+      });
+
+      pages.addEventListener("click", () => {
+        if (pages_dropdown.classList.contains("hidden")) {
+          pages_dropdown.classList.remove("hidden");
+          shop_dropdown.classList.add("hidden");
+          account_dropdown.classList.add("hidden");
+          mega_menu_dropdown.classList.add("hidden");
+          docs_dropdown.classList.add("hidden");
+          pages_dropdown.classList.add("flex");
+        } else {
+          pages_dropdown.classList.add("hidden");
+          pages_dropdown.classList.remove("flex");
+        }
+      });
+
+      account.addEventListener("click", () => {
+        if (account_dropdown.classList.contains("hidden")) {
+          account_dropdown.classList.remove("hidden");
+          pages_dropdown.classList.add("hidden");
+          shop_dropdown.classList.add("hidden");
+          mega_menu_dropdown.classList.add("hidden");
+          docs_dropdown.classList.add("hidden");
+          account_dropdown.classList.add("flex");
+        } else {
+          account_dropdown.classList.add("hidden");
+          account_dropdown.classList.remove("flex");
+        }
+      });
+
+      mega_menu.addEventListener("click", () => {
+        if (mega_menu_dropdown.classList.contains("hidden")) {
+          mega_menu_dropdown.classList.remove("hidden");
+          pages_dropdown.classList.add("hidden");
+          account_dropdown.classList.add("hidden");
+          shop_dropdown.classList.add("hidden");
+          docs_dropdown.classList.add("hidden");
+          mega_menu_dropdown.classList.add("flex");
+        } else {
+          mega_menu_dropdown.classList.add("hidden");
+          mega_menu_dropdown.classList.remove("flex");
+        }
+      });
+
+      docs.addEventListener("click", () => {
+        if (docs_dropdown.classList.contains("hidden")) {
+          docs_dropdown.classList.remove("hidden");
+          pages_dropdown.classList.add("hidden");
+          account_dropdown.classList.add("hidden");
+          mega_menu_dropdown.classList.add("hidden");
+          shop_dropdown.classList.add("hidden");
+          docs_dropdown.classList.add("flex");
+        } else {
+          docs_dropdown.classList.add("hidden");
+          docs_dropdown.classList.remove("flex");
+        }
+      });
+      
+      const section = document.querySelectorAll("main section");
+      const footer = document.querySelector("footer");
+      section.forEach((item)=>{
+        item.addEventListener("click",()=>{
+          docs_dropdown.classList.add("hidden");
+          pages_dropdown.classList.add("hidden");
+          account_dropdown.classList.add("hidden");
+          mega_menu_dropdown.classList.add("hidden");
+          shop_dropdown.classList.add("hidden");
+        })
+      })
+      footer.addEventListener("click", ()=>{
+        docs_dropdown.classList.add("hidden");
+          pages_dropdown.classList.add("hidden");
+          account_dropdown.classList.add("hidden");
+          mega_menu_dropdown.classList.add("hidden");
+          shop_dropdown.classList.add("hidden");
+      })
+      
     </script>
   </body>
 </html>

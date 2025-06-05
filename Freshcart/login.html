@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freshcart</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <main class="w-[100vw] h-[100vh] bg-[url(../images/login-bg.jpg)] bg-cover flex justify-start items-center md:px-0 sm:px-20 px-5">
+      <section class="md:w-4/12 w-full px-2 py-5 md:ms-20 bg-white">
+          <img
+            class="w-40 m-auto"
+            src="../icons/fresh.svg"
+            alt="logo..."
+          />
+          <div class="p-5">
+                <h2 class="text-2xl font-semibold py-2">Welcome back</h2>
+                <form class="flex flex-col gap-4" action="">
+                    <input class="border-[#e6e7e2] border p-2" type="email" placeholder="Email" autocomplete="off">
+                    <input class="border-[#e6e7e2] border p-2" type="password" placeholder="*****">
+                    <div class="flex justify-between sm:flex-nowrap flex-wrap">
+                       <span><input type="checkbox" name=""> Remember me </span>
+                        <span>Forgot password</span>
+                    </div>
+                    <button class="w-full bg-black text-white py-2" type="submit">Sign In</button>
+                </form>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>
